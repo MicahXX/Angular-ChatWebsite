@@ -1,13 +1,17 @@
 import { Component, signal } from '@angular/core';
-import {RouterLink, RouterOutlet} from '@angular/router';
-import {Homepage} from './homepage/homepage';
+import { RouterOutlet } from '@angular/router';
+// import { Homepage } from './homepage/homepage';  // we don't use this rn
+// import { RouterLink } from '@angular/router';     // we don't use this rn
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, Homepage],
+  standalone: true,
+  imports: [RouterOutlet], // add later if we use it
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
   protected readonly title = signal('Angular-ChatWebsite');
 }
+
+
