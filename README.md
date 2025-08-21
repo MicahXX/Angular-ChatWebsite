@@ -1,3 +1,11 @@
+# Made With: 
+
+MySQL  (stores users + messages)
+
+TypeScript backend  Express + Socket.IO
+
+Angular frontend (login/signup/chat)
+
 # AngularChatWebsite
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.0.
